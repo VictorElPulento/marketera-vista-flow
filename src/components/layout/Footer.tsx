@@ -15,40 +15,40 @@ const Footer = () => {
               <span className="text-xl font-bold text-white">MarketEra</span>
             </div>
             <p className="mt-4 text-sm text-gray-300">
-              Bringing the future home with cutting-edge smart technology that enhances your everyday life.
+              Llevando el futuro a casa con tecnología inteligente de vanguardia que mejora tu vida diaria.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="col-span-1">
-            <h3 className="text-lg font-bold mb-4">Shop</h3>
+            <h3 className="text-lg font-bold mb-4">Comprar</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Smart Home</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Hogar Inteligente</Link></li>
               <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Wearables</Link></li>
               <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Audio</Link></li>
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Accessories</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Accesorios</Link></li>
             </ul>
           </div>
 
           {/* Company */}
           <div className="col-span-1">
-            <h3 className="text-lg font-bold mb-4">Company</h3>
+            <h3 className="text-lg font-bold mb-4">Empresa</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">About Us</Link></li>
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Careers</Link></li>
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Press</Link></li>
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Sustainability</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Sobre Nosotros</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Empleo</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Prensa</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Sostenibilidad</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div className="col-span-1">
-            <h3 className="text-lg font-bold mb-4">Support</h3>
+            <h3 className="text-lg font-bold mb-4">Soporte</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Contact Us</Link></li>
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Help Center</Link></li>
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Returns & Warranty</Link></li>
-              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Shipping Info</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Contacto</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Centro de Ayuda</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Devoluciones y Garantía</Link></li>
+              <li><Link to="#" className="hover:text-marketera-electric-blue transition-colors">Información de Envío</Link></li>
             </ul>
           </div>
         </div>
@@ -56,10 +56,10 @@ const Footer = () => {
         <hr className="my-8 border-gray-700" />
         
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400">© 2025 MarketEra. All rights reserved.</p>
+          <p className="text-sm text-gray-400">© 2025 MarketEra. Todos los derechos reservados.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <Link to="#" className="text-gray-400 hover:text-white transition-colors">Privacy</Link>
-            <Link to="#" className="text-gray-400 hover:text-white transition-colors">Terms</Link>
+            <Link to="#" className="text-gray-400 hover:text-white transition-colors">Privacidad</Link>
+            <Link to="#" className="text-gray-400 hover:text-white transition-colors">Términos</Link>
             <Link to="#" className="text-gray-400 hover:text-white transition-colors">Cookies</Link>
           </div>
         </div>

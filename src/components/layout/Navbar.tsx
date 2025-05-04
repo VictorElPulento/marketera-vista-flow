@@ -19,10 +19,10 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/" className="text-marketera-blue-dark hover:text-marketera-blue font-medium">Home</Link>
-          <Link to="/product" className="text-marketera-blue-dark hover:text-marketera-blue font-medium">Products</Link>
-          <Link to="/calendar" className="text-marketera-blue-dark hover:text-marketera-blue font-medium">Calendar</Link>
-          <Link to="#" className="text-marketera-blue-dark hover:text-marketera-blue font-medium">About</Link>
+          <Link to="/" className="text-marketera-blue-dark hover:text-marketera-blue font-medium">Inicio</Link>
+          <Link to="/product" className="text-marketera-blue-dark hover:text-marketera-blue font-medium">Productos</Link>
+          <Link to="/calendar" className="text-marketera-blue-dark hover:text-marketera-blue font-medium">Calendario</Link>
+          <Link to="#" className="text-marketera-blue-dark hover:text-marketera-blue font-medium">Nosotros</Link>
         </div>
 
         {/* Action Icons */}
@@ -68,16 +68,16 @@ const Navbar = () => {
         <div className="fixed inset-0 top-16 z-40 bg-white p-4 md:hidden">
           <div className="flex flex-col gap-6 py-8">
             <Link to="/" className="text-lg font-medium text-marketera-blue-dark" onClick={() => setIsOpen(false)}>
-              Home
+              Inicio
             </Link>
             <Link to="/product" className="text-lg font-medium text-marketera-blue-dark" onClick={() => setIsOpen(false)}>
-              Products
+              Productos
             </Link>
             <Link to="/calendar" className="text-lg font-medium text-marketera-blue-dark" onClick={() => setIsOpen(false)}>
-              Calendar
+              Calendario
             </Link>
             <Link to="#" className="text-lg font-medium text-marketera-blue-dark" onClick={() => setIsOpen(false)}>
-              About
+              Nosotros
             </Link>
             <div className="flex items-center gap-4 pt-6">
               <Button variant="outline" size="icon" className="rounded-full">

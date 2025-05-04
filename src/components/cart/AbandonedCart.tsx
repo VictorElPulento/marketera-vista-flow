@@ -16,23 +16,23 @@ const AbandonedCart = () => {
     },
     {
       id: 2,
-      name: 'EraLight Smart Bulb',
+      name: 'EraLight Bombilla Inteligente',
       price: 49.99,
       quantity: 2,
       image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=100&h=100',
     }
   ];
   
-  // Calculate cart totals
+  // Calcular totales del carrito
   const subtotal = cartItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
-  const shipping = 0; // Free shipping
+  const shipping = 0; // Envío gratuito
   const total = subtotal + shipping;
   
-  // Format currency
+  // Formatear divisa
   const formatCurrency = (amount: number) => {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('es-ES', {
       style: 'currency',
-      currency: 'USD',
+      currency: 'EUR',
     }).format(amount);
   };
 
@@ -41,13 +41,13 @@ const AbandonedCart = () => {
       <div className="container mx-auto max-w-5xl">
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
           <div className="flex flex-col md:flex-row">
-            {/* Cart Items */}
+            {/* Elementos del Carrito */}
             <div className="p-6 md:p-8 flex-1">
               <div className="flex justify-between items-center mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-marketera-blue-dark">Your Cart</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-marketera-blue-dark">Tu Carrito</h2>
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-marketera-neon-lime"></span>
-                  <span className="text-sm text-marketera-gray">Items saved for 24 hours</span>
+                  <span className="text-sm text-marketera-gray">Artículos guardados durante 24 horas</span>
                 </div>
               </div>
               
@@ -69,7 +69,7 @@ const AbandonedCart = () => {
                           <X className="w-4 h-4" />
                         </button>
                       </div>
-                      <p className="text-marketera-gray text-sm mt-1">Black | One Size</p>
+                      <p className="text-marketera-gray text-sm mt-1">Negro | Talla única</p>
                       
                       <div className="flex justify-between items-center mt-4">
                         <div className="flex items-center border rounded-md overflow-hidden">
@@ -89,23 +89,23 @@ const AbandonedCart = () => {
               </div>
               
               <div className="mt-8">
-                <h3 className="font-semibold text-marketera-blue-dark mb-4">Have a promo code?</h3>
+                <h3 className="font-semibold text-marketera-blue-dark mb-4">¿Tienes un código promocional?</h3>
                 <div className="flex gap-2">
                   <input 
                     type="text" 
-                    placeholder="Enter code" 
+                    placeholder="Introduce código" 
                     className="px-4 py-2 border rounded-lg flex-1 focus:outline-none focus:ring-2 focus:ring-marketera-blue"
                   />
                   <button className="px-4 py-2 bg-marketera-blue text-white rounded-lg hover:bg-marketera-blue-dark transition-colors">
-                    Apply
+                    Aplicar
                   </button>
                 </div>
               </div>
             </div>
             
-            {/* Order Summary */}
+            {/* Resumen del Pedido */}
             <div className="bg-marketera-gray-light p-6 md:p-8 md:w-80">
-              <h2 className="text-xl font-bold text-marketera-blue-dark mb-6">Order Summary</h2>
+              <h2 className="text-xl font-bold text-marketera-blue-dark mb-6">Resumen del Pedido</h2>
               
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between">
@@ -113,12 +113,12 @@ const AbandonedCart = () => {
                   <span className="font-medium">{formatCurrency(subtotal)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-marketera-gray">Shipping</span>
-                  <span className="font-medium">Free</span>
+                  <span className="text-marketera-gray">Envío</span>
+                  <span className="font-medium">Gratis</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-marketera-gray">Tax</span>
-                  <span className="font-medium">Calculated at checkout</span>
+                  <span className="text-marketera-gray">Impuestos</span>
+                  <span className="font-medium">Se calculan al finalizar</span>
                 </div>
                 <div className="border-t pt-4 mt-2">
                   <div className="flex justify-between font-bold text-lg">
@@ -129,12 +129,12 @@ const AbandonedCart = () => {
               </div>
               
               <button className="marketera-btn-primary w-full">
-                Checkout Now
+                Finalizar Compra
               </button>
               
               <div className="mt-6 text-center">
                 <Link to="/" className="text-marketera-blue text-sm flex items-center justify-center hover:underline">
-                  Continue Shopping <ArrowRight className="ml-1 w-4 h-4" />
+                  Seguir Comprando <ArrowRight className="ml-1 w-4 h-4" />
                 </Link>
               </div>
               
@@ -145,7 +145,7 @@ const AbandonedCart = () => {
                       <path d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <p className="text-sm">Free shipping on orders over $99</p>
+                  <p className="text-sm">Envío gratuito en pedidos superiores a 99€</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-8 w-8 rounded-full bg-marketera-neon-lime flex items-center justify-center">
@@ -153,7 +153,7 @@ const AbandonedCart = () => {
                       <path d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <p className="text-sm">30-day easy returns</p>
+                  <p className="text-sm">Devolución sencilla en 30 días</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="h-8 w-8 rounded-full bg-marketera-neon-lime flex items-center justify-center">
@@ -161,14 +161,14 @@ const AbandonedCart = () => {
                       <path d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <p className="text-sm">Secure checkout</p>
+                  <p className="text-sm">Pago seguro</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         
-        {/* Abandoned Cart Modal */}
+        {/* Modal de Carrito Abandonado */}
         {showModal && (
           <div className="fixed bottom-8 right-8 max-w-md bg-white rounded-xl shadow-2xl p-6 border-t-4 border-marketera-neon-lime z-50">
             <button 
@@ -178,9 +178,9 @@ const AbandonedCart = () => {
               <X className="w-5 h-5" />
             </button>
             
-            <h3 className="text-xl font-bold text-marketera-blue-dark mb-2">Don't Miss Out!</h3>
+            <h3 className="text-xl font-bold text-marketera-blue-dark mb-2">¡No te lo pierdas!</h3>
             <p className="text-marketera-gray mb-4">
-              The EraSound Pro is selling fast! Complete your purchase now and enjoy 10% off with code <strong>COMEBACK10</strong>.
+              ¡El EraSound Pro se está vendiendo muy rápido! Completa tu compra ahora y disfruta de un 10% de descuento con el código <strong>REGRESA10</strong>.
             </p>
             
             <div className="flex justify-between items-center bg-marketera-gray-light p-4 rounded-lg mb-6">
@@ -192,10 +192,10 @@ const AbandonedCart = () => {
                 />
                 <div>
                   <h4 className="font-medium text-marketera-blue-dark">EraSound Pro</h4>
-                  <p className="text-sm text-marketera-gray">Black</p>
+                  <p className="text-sm text-marketera-gray">Negro</p>
                 </div>
               </div>
-              <p className="font-bold text-marketera-blue-dark">$299.99</p>
+              <p className="font-bold text-marketera-blue-dark">299,99€</p>
             </div>
             
             <div className="flex gap-4">
@@ -203,10 +203,10 @@ const AbandonedCart = () => {
                 onClick={() => setShowModal(false)}
                 className="flex-1 text-marketera-blue hover:underline text-sm"
               >
-                I'll think about it
+                Lo pensaré
               </button>
               <button className="flex-1 marketera-btn-primary py-2">
-                Complete Purchase
+                Completar Compra
               </button>
             </div>
           </div>

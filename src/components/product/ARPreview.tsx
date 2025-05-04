@@ -17,8 +17,8 @@ const ARPreview = ({ onClose }: ARPreviewProps) => {
         </button>
         
         <div className="p-8 text-center">
-          <h3 className="text-2xl font-bold text-marketera-blue-dark mb-2">Augmented Reality Preview</h3>
-          <p className="text-marketera-gray mb-6">Experience the product in your space before you buy</p>
+          <h3 className="text-2xl font-bold text-marketera-blue-dark mb-2">Vista Previa en Realidad Aumentada</h3>
+          <p className="text-marketera-gray mb-6">Experimenta el producto en tu espacio antes de comprarlo</p>
         </div>
         
         <div className="bg-marketera-gray-light h-96 flex items-center justify-center relative">
@@ -27,27 +27,27 @@ const ARPreview = ({ onClose }: ARPreviewProps) => {
           <div className="relative z-10 flex flex-col items-center">
             <img 
               src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=400&q=80" 
-              alt="AR Preview Placeholder"
+              alt="Vista previa de AR"
               className="h-60 w-auto animate-float"
             />
             
             <div className="mt-6 flex flex-col items-center">
               <div className="w-24 h-0.5 rounded-full bg-marketera-blue opacity-50"></div>
-              <p className="mt-4 text-marketera-blue font-medium">AR View: Point camera at a flat surface</p>
+              <p className="mt-4 text-marketera-blue font-medium">Vista AR: Apunta la cámara a una superficie plana</p>
             </div>
           </div>
           
           <div className="absolute left-4 bottom-4 bg-white bg-opacity-90 backdrop-blur-sm p-3 rounded-lg">
             <div className="flex items-center gap-2">
               <div className="h-3 w-3 rounded-full bg-marketera-blue animate-pulse"></div>
-              <p className="text-sm font-medium text-marketera-blue-dark">Camera active</p>
+              <p className="text-sm font-medium text-marketera-blue-dark">Cámara activa</p>
             </div>
           </div>
         </div>
         
         <div className="p-6 bg-white flex justify-between">
-          <button className="marketera-btn-outline px-5" onClick={onClose}>Cancel</button>
-          <button className="marketera-btn-primary px-5">Add to Cart</button>
+          <button className="marketera-btn-outline px-5" onClick={onClose}>Cancelar</button>
+          <button className="marketera-btn-primary px-5">Añadir al Carrito</button>
         </div>
       </div>
     </div>
